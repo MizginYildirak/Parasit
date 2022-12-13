@@ -1,0 +1,29 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin btn {
+  padding: 16px 32px;
+  border: 1px solid $secondary-color;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 8px;
+  color: $secondary-color;
+  font-weight: 600;
+}
+
+@mixin mq($width: "laptop") {
+  @if ($width == "laptop") {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}
