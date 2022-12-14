@@ -207,6 +207,25 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  max-width: 55%;
+  text-align: center;
+  line-height: 25px;
+}
+
+.title h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.paradis-box h3 {
+  padding-bottom: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .header {
   width: 100%;
 }
@@ -304,6 +323,51 @@ body {
   width: 100%;
 }
 
+.paradis {
+  max-width: 1080px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20rem 0;
+  display: flex;
+}
+
+.paradis-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.paradis .title {
+  padding: 5rem 0;
+}
+
+.paradis-main {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  display: flex;
+}
+
+.paradis .middle-box {
+  box-shadow: 0 48px 70px #23364714;
+}
+
+.paradis-box {
+  flex: 1;
+  padding: 24px;
+  line-height: 25.6px;
+}
+
+.paradis-box img {
+  background-color: #f6f8ff;
+  border-radius: 16px;
+  margin-bottom: 48px;
+  padding: 10px;
+}
+
 @media only screen and (max-width: 1024px) {
   .nav {
     padding: 0 24px;
@@ -321,6 +385,15 @@ body {
 
   .nav-button button, .nav-menu-list li {
     display: none;
+  }
+
+  .paradis {
+    padding-top: 12rem;
+  }
+
+  .paradis .title {
+    max-width: 100%;
+    padding: 0 24px 2rem;
   }
 }
 
@@ -345,6 +418,10 @@ body {
   .hero-background {
     height: 350px;
   }
+
+  .paradis .title {
+    padding-top: 6rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -355,6 +432,10 @@ body {
 
   .hero-text {
     padding: 3rem 24px 0;
+  }
+
+  .paradis .title {
+    padding-top: 1rem;
   }
 }
 

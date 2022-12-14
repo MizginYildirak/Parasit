@@ -83,6 +83,45 @@
   }
 }
 
+.paradis {
+  padding: 20rem 0;
+  max-width: 1080px;
+  @include center;
+  margin: auto;
+
+  &-container {
+    @include center;
+    flex-direction: column;
+  }
+
+  .title {
+    padding: 5rem 0;
+  }
+
+  &-main {
+    @include center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .middle-box {
+    box-shadow: 0px 48px 70px 0px #23364714;
+  }
+
+  &-box {
+    flex: 1;
+    padding: 24px;
+    line-height: 25.6px;
+  }
+
+  &-box img {
+    padding: 10px;
+    border-radius: 16px;
+    background-color: $i-bg;
+    margin-bottom: 48px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .nav {
     padding: 0 24px;
@@ -105,10 +144,18 @@
   .nav-menu-list li {
     display: none;
   }
+
+  .paradis {
+    padding-top: 12rem;
+  }
+
+  .paradis .title {
+    max-width: 100%;
+    padding: 0 24px 2rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-
   .hero-text {
     max-width: 100%;
     padding-top: 2rem;
@@ -129,6 +176,10 @@
   .hero-background {
     height: 350px;
   }
+
+  .paradis .title {
+    padding-top: 6rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -139,5 +190,9 @@
 
   .hero-text {
     padding: 3rem 24px 0;
+  }
+
+  .paradis .title {
+    padding-top: 1rem;
   }
 }
