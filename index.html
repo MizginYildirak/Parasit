@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,14 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paradis</title>
-    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./scss/main.scss">
 </head>
 
 <body>
     <header class="header">
         <nav class="container nav">
-            <a class="nav-logo" href=""><img src="./assets/paradis icon/blockchain 1.png" alt=""><span
-                    class="paradis">Paradis</span></a>
+            <a class="nav-logo" href=""><img src="./assets/paradis icon/blockchain 1.png" alt=""><span class="paradis">Paradis</span></a>
 
             <ul class="nav-menu-list">
                 <li><a href="">Our Mission</a></li>
@@ -26,14 +26,28 @@
                 <button>Paradis DeFi</button>
             </div>
 
-            <div class="nav-menu">
-                <input type="checkbox" class="menu-btn" id="menu-btn" />
-                <label for="menu-btn" class="menu-icon">
-                    <span class="nav-icon"></span>
-                </label>
-            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                ≡
+            </label>
         </nav>
     </header>
+
+    <section class="hero">
+        <div class="hero-background container">
+            <div class="hero-text">
+                <h6 class="hero-title">ALL NETWORKS IN ONE PLACE</h6>
+                <h2 class="hero-description">Enter The World Of Decentralised Finance</h2>
+                <p class="hero-explanation">The Eden Smart Chain is a low latency, cross platform smart contract chain
+                    for digital assets, fiat
+                    on-ramping and dApps.</p>
+            </div>
+        </div>
+
+        <div class="hero-devices">
+            <img class="hero-banner" src="./assets/images/Device Preview.png" alt="">
+        </div>
+    </section>
 
 </body>
 

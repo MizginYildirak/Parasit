@@ -1,0 +1,143 @@
+.header {
+  width: 100%;
+}
+
+.nav {
+  @include space-between;
+  height: 110px;
+
+  &-logo {
+    @include center;
+    gap: 10px;
+  }
+
+  &-menu-list {
+    @include center;
+    gap: 59px;
+
+    li {
+      color: #1f1f1f;
+    }
+  }
+
+  &-button button {
+    @include btn;
+  }
+
+  #check {
+    display: none;
+  }
+
+  .checkbtn {
+    font-size: 50px;
+    color: $primary-color;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+.hero {
+  &-background {
+    height: 524px;
+    text-align: center;
+    background-color: $hero-bg;
+    border-radius: 32px;
+    position: relative;
+  }
+
+  &-title {
+    color: $secondary-color;
+    font-weight: 600;
+  }
+
+  &-text {
+    max-width: 46%;
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+  &-description {
+    font-size: 43px;
+    padding: 1rem;
+    font-weight: 600;
+  }
+
+  &-explanation {
+    @include center;
+    margin: auto;
+    line-height: 25px;
+  }
+
+  &-devices {
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+
+  &-banner {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    padding: 0 24px;
+  }
+
+  .hero-background {
+    height: 500px;
+    margin: 0 24px;
+  }
+
+  .nav .checkbtn {
+    display: block;
+    margin-right: 0;
+  }
+
+  .nav-button button {
+    display: none;
+  }
+
+  .nav-menu-list li {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .hero-text {
+    max-width: 100%;
+    padding-top: 2rem;
+  }
+
+  .hero-description {
+    font-size: 28px;
+  }
+
+  .hero-explanation {
+    font-size: 14px;
+  }
+
+  .hero-devices {
+    width: 80%;
+  }
+
+  .hero-background {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-background {
+    padding: 0;
+    height: 400px;
+  }
+
+  .hero-text {
+    padding: 3rem 24px 0;
+  }
+}

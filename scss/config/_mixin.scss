@@ -20,10 +20,3 @@
   font-weight: 600;
 }
 
-@mixin mq($width: "laptop") {
-  @if ($width == "laptop") {
-    @media (max-width: 1024px) {
-      @content;
-    }
-  }
-}

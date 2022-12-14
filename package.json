@@ -1,0 +1,12 @@
+{
+  "name": "my-project",
+  "source": "scss/main.scss",
+  "scripts": {
+    "start": "parcel watch scss/main.scss",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.1",
+    "parcel": "^2.8.1"
+  }
+}
