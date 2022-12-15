@@ -279,48 +279,19 @@ h3 {
   display: none;
 }
 
-.hero-background {
-  height: 524px;
-  text-align: center;
-  background-color: #eff4ff;
-  border-radius: 32px;
-  position: relative;
-}
+@media only screen and (max-width: 1024px) {
+  .nav {
+    padding: 0 24px;
+  }
 
-.hero-title {
-  color: #508ff4;
-  font-weight: 600;
-}
+  .nav .checkbtn {
+    margin-right: 0;
+    display: block;
+  }
 
-.hero-text {
-  max-width: 46%;
-  margin: auto;
-  padding-top: 3rem;
-}
-
-.hero-description {
-  padding: 1rem;
-  font-size: 43px;
-  font-weight: 600;
-}
-
-.hero-explanation {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  line-height: 25px;
-  display: flex;
-}
-
-.hero-devices {
-  max-width: 1000px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -40%);
-}
-
-.hero-banner {
-  width: 100%;
+  .nav-button button, .nav-menu-list li {
+    display: none;
+  }
 }
 
 .paradis {
@@ -372,6 +343,34 @@ h3 {
   padding: 10px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .paradis {
+    padding-top: 12rem;
+  }
+
+  .paradis .title {
+    max-width: 100%;
+    padding: 0 24px 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .paradis {
+    padding-top: 10rem;
+    padding-bottom: 0;
+  }
+
+  .paradis .title {
+    padding-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .paradis .title {
+    padding-top: 1rem;
+  }
+}
+
 .mission {
   justify-content: center;
   align-items: center;
@@ -383,7 +382,7 @@ h3 {
   max-width: 35%;
   text-align: left;
   z-index: 2;
-  background-color: #ffd8d140;
+  background-color: #f6f8ff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -407,7 +406,7 @@ h3 {
 
 @media only screen and (max-width: 1220px) {
   .mission-top {
-    padding: 100px;
+    padding: 100px 50px 100px 100px;
   }
 
   .mission .story {
@@ -416,39 +415,82 @@ h3 {
 }
 
 @media only screen and (max-width: 1024px) {
-  .nav {
-    padding: 0 24px;
-  }
-
-  .hero-background {
-    height: 500px;
-    margin: 0 24px;
-  }
-
-  .nav .checkbtn {
-    margin-right: 0;
-    display: block;
-  }
-
-  .nav-button button, .nav-menu-list li {
-    display: none;
-  }
-
-  .paradis {
-    padding-top: 12rem;
-  }
-
-  .paradis .title {
-    max-width: 100%;
-    padding: 0 24px 2rem;
-  }
-
   .mission-top {
     padding: 80px;
   }
 
   .mission .story {
     padding: 100px 50px 20px 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mission {
+    flex-direction: column;
+  }
+
+  .mission-top {
+    max-width: 100%;
+    margin-top: 4rem;
+    padding: 80px 24px;
+    position: static;
+  }
+
+  .mission .story {
+    max-width: 100%;
+    padding: 80px 24px;
+    position: static;
+  }
+}
+
+.hero-background {
+  height: 524px;
+  text-align: center;
+  background-color: #eff4ff;
+  border-radius: 32px;
+  position: relative;
+}
+
+.hero-title {
+  color: #508ff4;
+  font-weight: 600;
+}
+
+.hero-text {
+  max-width: 46%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.hero-description {
+  padding: 1rem;
+  font-size: 43px;
+  font-weight: 600;
+}
+
+.hero-explanation {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  line-height: 25px;
+  display: flex;
+}
+
+.hero-devices {
+  max-width: 1000px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.hero-banner {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-background {
+    height: 500px;
+    margin: 0 24px;
   }
 }
 
@@ -473,32 +515,6 @@ h3 {
   .hero-background {
     height: 350px;
   }
-
-  .paradis {
-    padding-top: 10rem;
-    padding-bottom: 0;
-  }
-
-  .paradis .title {
-    padding-top: 6rem;
-  }
-
-  .mission {
-    flex-direction: column;
-  }
-
-  .mission-top {
-    max-width: 100%;
-    margin-top: 4rem;
-    padding: 80px 24px;
-    position: static;
-  }
-
-  .mission .story {
-    max-width: 100%;
-    padding: 80px 24px;
-    position: static;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -509,10 +525,6 @@ h3 {
 
   .hero-text {
     padding: 3rem 24px 0;
-  }
-
-  .paradis .title {
-    padding-top: 1rem;
   }
 }
 

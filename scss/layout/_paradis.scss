@@ -1,0 +1,70 @@
+.paradis {
+  padding: 20rem 0 18rem;
+  max-width: 1080px;
+  @include center;
+  margin: auto;
+
+  &-container {
+    @include center;
+    flex-direction: column;
+  }
+
+  .title {
+    padding: 5rem 0;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  &-main {
+    @include center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .middle-box {
+    box-shadow: 0px 48px 70px 0px #23364714;
+  }
+
+  &-box {
+    flex: 1;
+    padding: 24px;
+    line-height: 25.6px;
+  }
+
+  &-box img {
+    padding: 10px;
+    border-radius: 16px;
+    background-color: $i-bg;
+    margin-bottom: 48px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .paradis {
+    padding-top: 12rem;
+  }
+
+  .paradis .title {
+    max-width: 100%;
+    padding: 0 24px 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .paradis {
+    padding-top: 10rem;
+    padding-bottom: 0;
+  }
+
+  .paradis .title {
+    padding-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .paradis .title {
+    padding-top: 1rem;
+  }
+}
