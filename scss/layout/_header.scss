@@ -84,7 +84,7 @@
 }
 
 .paradis {
-  padding: 20rem 0;
+  padding: 20rem 0 18rem;
   max-width: 1080px;
   @include center;
   margin: auto;
@@ -96,6 +96,10 @@
 
   .title {
     padding: 5rem 0;
+
+    span {
+      color: $secondary-color;
+    }
   }
 
   &-main {
@@ -119,6 +123,45 @@
     border-radius: 16px;
     background-color: $i-bg;
     margin-bottom: 48px;
+  }
+}
+
+.mission {
+  @include center;
+  position: relative;
+
+  &-top {
+    max-width: 35%;
+    background-color: #ffd8d140;
+    @include center;
+    flex-direction: column;
+    padding: 150px;
+    text-align: left;
+    line-height: 25px;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    margin-top: 6rem;
+  }
+
+  .story {
+    max-width: 35%;
+    padding: 110px 50px 50px 200px;
+    line-height: 25px;
+    background-color: $i-bg;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .mission-top {
+    padding: 100px;
+  }
+
+  .mission .story {
+    padding: 110px 50px 20px 200px;
   }
 }
 
@@ -153,6 +196,14 @@
     max-width: 100%;
     padding: 0 24px 2rem;
   }
+
+  .mission-top {
+    padding: 80px;
+  }
+
+  .mission .story {
+    padding: 100px 50px 20px 150px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -177,8 +228,30 @@
     height: 350px;
   }
 
+  .paradis {
+    padding-top: 10rem;
+    padding-bottom: 0;
+  }
+
   .paradis .title {
     padding-top: 6rem;
+  }
+
+  .mission {
+    flex-direction: column;
+  }
+
+  .mission-top {
+    max-width: 100%;
+    position: static;
+    padding: 80px 24px;
+    margin-top: 4rem;
+  }
+
+  .mission .story {
+    max-width: 100%;
+    position: static;
+    padding: 80px 24px;
   }
 }
 

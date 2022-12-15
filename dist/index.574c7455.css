@@ -213,14 +213,14 @@ body {
   line-height: 25px;
 }
 
-.title h2 {
+h2 {
   text-align: center;
   padding-bottom: 1rem;
   font-size: 26px;
   font-weight: 600;
 }
 
-.paradis-box h3 {
+h3 {
   padding-bottom: 1rem;
   font-size: 20px;
   font-weight: 600;
@@ -328,7 +328,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 20rem 0;
+  padding: 20rem 0 18rem;
   display: flex;
 }
 
@@ -341,6 +341,10 @@ body {
 
 .paradis .title {
   padding: 5rem 0;
+}
+
+.paradis .title span {
+  color: #508ff4;
 }
 
 .paradis-main {
@@ -366,6 +370,49 @@ body {
   border-radius: 16px;
   margin-bottom: 48px;
   padding: 10px;
+}
+
+.mission {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.mission-top {
+  max-width: 35%;
+  text-align: left;
+  z-index: 2;
+  background-color: #ffd8d140;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  padding: 150px;
+  line-height: 25px;
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
+.mission .story {
+  max-width: 35%;
+  background-color: #f6f8ff;
+  padding: 110px 50px 50px 200px;
+  line-height: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 1220px) {
+  .mission-top {
+    padding: 100px;
+  }
+
+  .mission .story {
+    padding: 110px 50px 20px 200px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -395,6 +442,14 @@ body {
     max-width: 100%;
     padding: 0 24px 2rem;
   }
+
+  .mission-top {
+    padding: 80px;
+  }
+
+  .mission .story {
+    padding: 100px 50px 20px 150px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -419,8 +474,30 @@ body {
     height: 350px;
   }
 
+  .paradis {
+    padding-top: 10rem;
+    padding-bottom: 0;
+  }
+
   .paradis .title {
     padding-top: 6rem;
+  }
+
+  .mission {
+    flex-direction: column;
+  }
+
+  .mission-top {
+    max-width: 100%;
+    margin-top: 4rem;
+    padding: 80px 24px;
+    position: static;
+  }
+
+  .mission .story {
+    max-width: 100%;
+    padding: 80px 24px;
+    position: static;
   }
 }
 
