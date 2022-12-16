@@ -20,3 +20,7 @@
   font-weight: 600;
 }
 
+@mixin paragraph {
+  padding: 20px 0;
+  line-height: 25px;
+}

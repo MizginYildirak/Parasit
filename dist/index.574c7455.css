@@ -226,6 +226,20 @@ h3 {
   font-weight: 600;
 }
 
+.left {
+  padding-left: 180px;
+}
+
+.right {
+  padding-right: 180px;
+}
+
+.icon {
+  background-color: #f6f8ff;
+  border-radius: 16px;
+  padding: 10px;
+}
+
 .header {
   width: 100%;
 }
@@ -374,6 +388,7 @@ h3 {
 .mission {
   justify-content: center;
   align-items: center;
+  margin-bottom: 12rem;
   display: flex;
   position: relative;
 }
@@ -525,6 +540,120 @@ h3 {
 
   .hero-text {
     padding: 3rem 24px 0;
+  }
+}
+
+.defi {
+  padding: 20rem 0;
+}
+
+.defi-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.defi span {
+  color: #508ff4;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.defi-main {
+  padding-right: 50px;
+}
+
+.defi-top h2 {
+  text-align: left;
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+
+.defi-top p {
+  max-width: 90%;
+  padding: 20px 0;
+  line-height: 25px;
+}
+
+.defi-top button {
+  cursor: pointer;
+  color: #508ff4;
+  color: #fff;
+  background-color: #508ff4;
+  border: 1px solid #508ff4;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  font-weight: 600;
+  display: flex;
+}
+
+.defi .icon {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.defi-bottom {
+  grid-template-columns: auto auto;
+  gap: 80px;
+  padding: 20px 0;
+  line-height: 25px;
+  display: grid;
+}
+
+.defi .swap {
+  box-shadow: 0 48px 70px #23364714;
+}
+
+@media only screen and (max-width: 1220px) {
+  .defi-container {
+    flex-direction: column;
+  }
+
+  .defi-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .left {
+    padding: 0 24px;
+  }
+
+  .defi {
+    padding: 26rem 0;
+  }
+
+  .swap img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .defi {
+    padding: 0 24px;
+  }
+
+  .defi-main {
+    padding-right: 0;
+  }
+
+  .defi-container {
+    padding: 0;
+  }
+
+  defi-top p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .defi-bottom {
+    grid-template-columns: auto;
   }
 }
 

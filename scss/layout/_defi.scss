@@ -1,0 +1,100 @@
+.defi {
+  padding: 20rem 0;
+  &-container {
+    @include center;
+  }
+
+  span {
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &-main {
+    padding-right: 50px;
+  }
+
+  &-top h2 {
+    text-align: left;
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+
+  &-top p {
+    @include paragraph;
+    max-width: 90%;
+  }
+
+  &-top button {
+    @include btn;
+    @include center;
+    background-color: $secondary-color;
+    color: white;
+    gap: 10px;
+  }
+
+  .icon {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  &-bottom {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 80px;
+    @include paragraph;
+  }
+
+  .swap {
+    box-shadow: 0px 48px 70px 0px #23364714;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .defi-container {
+    flex-direction: column;
+  }
+
+  .defi-top {
+    @include center;
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 0 24px;
+  }
+
+  .defi {
+    padding: 26rem 0;
+  }
+
+  .swap img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .defi {
+    padding: 0 24px;
+  }
+
+  .defi-main {
+    padding-right: 0;
+  }
+
+  .defi-container {
+    padding: 0;
+  }
+
+  defi-top p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .defi-bottom {
+    grid-template-columns: auto;
+  }
+}
