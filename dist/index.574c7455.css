@@ -442,6 +442,7 @@ h3 {
 @media only screen and (max-width: 768px) {
   .mission {
     flex-direction: column;
+    margin-bottom: 5rem;
   }
 
   .mission-top {
@@ -638,6 +639,10 @@ h3 {
     padding: 0 24px;
   }
 
+  .defi-top h2 {
+    text-align: center;
+  }
+
   .defi-main {
     padding-right: 0;
   }
@@ -646,8 +651,9 @@ h3 {
     padding: 0;
   }
 
-  defi-top p {
+  .defi-top p {
     text-align: center;
+    width: 100%;
   }
 }
 

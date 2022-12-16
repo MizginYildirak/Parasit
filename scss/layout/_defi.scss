@@ -80,6 +80,10 @@
     padding: 0 24px;
   }
 
+  .defi-top h2 {
+    text-align: center;
+  }
+
   .defi-main {
     padding-right: 0;
   }
@@ -88,8 +92,9 @@
     padding: 0;
   }
 
-  defi-top p {
+  .defi-top p {
     text-align: center;
+    width: 100%;
   }
 }
 
