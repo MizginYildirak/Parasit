@@ -546,7 +546,7 @@ h3 {
 }
 
 .defi {
-  padding: 20rem 0;
+  padding: 20rem 0 5rem;
 }
 
 .defi-container {
@@ -661,6 +661,79 @@ h3 {
 @media only screen and (max-width: 576px) {
   .defi-bottom {
     grid-template-columns: auto;
+  }
+}
+
+.container-community {
+  width: 100%;
+  background: #9796f0;
+  background: -webkit-linear-gradient(to bottom, #f9e7ec, #e0e0ef);
+  background: linear-gradient(#ffedf1, #f0f0ff);
+  padding: 5rem 0;
+}
+
+.container-community .community {
+  max-width: 1080px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container-community .community-details-top {
+  max-width: 80%;
+  border: 1px solid red;
+  padding-bottom: 4rem;
+}
+
+.container-community .community-details-top h2 {
+  text-align: left;
+}
+
+.container-community .community-details-bottom {
+  max-width: 80%;
+  background-color: #ffffff8c;
+  border-radius: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  display: flex;
+}
+
+.container-community .community-details-bottom-votes {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-community .community .led {
+  flex-direction: column;
+  gap: 70px;
+  display: flex;
+}
+
+.container-community .community .led-box img {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1220px) {
+  .community {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-community .community-details-top h2 {
+    text-align: center;
+  }
+
+  .container-community .community-details-top {
+    max-width: 100%;
+    text-align: center;
   }
 }
 

@@ -1,0 +1,80 @@
+.container-community {
+  padding: 5rem 0;
+  width: 100%;
+  background: rgb(151, 150, 240); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(249, 231, 236, 1),
+    rgb(224, 224, 239)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 237, 241),
+    rgba(240, 240, 255, 1)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .community {
+    @include center;
+    gap: 30px;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    &-details {
+      &-top {
+        max-width: 80%;
+        padding-bottom: 4rem;
+        border: 1px solid red;
+
+        h2 {
+          text-align: left;
+        }
+      }
+
+      &-bottom {
+        @include space-between;
+        flex-direction: column;
+        background-color: #ffffff8c;
+        padding: 40px 20px;
+        max-width: 80%;
+        border-radius: 32px;
+
+        &-votes {
+          @include center;
+        }
+
+        &-statistics {
+        }
+      }
+    }
+
+    .led {
+      @include column;
+      gap: 70px;
+
+      &-box {
+        img {
+          margin-bottom: 30px;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .community {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-community .community-details-top h2 {
+    text-align: center;
+  }
+
+  .container-community .community-details-top {
+    max-width: 100%;
+    text-align: center;
+  }
+}

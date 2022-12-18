@@ -24,3 +24,8 @@
   padding: 20px 0;
   line-height: 25px;
 }
+
+@mixin column {
+display: flex;
+flex-direction: column;
+}
