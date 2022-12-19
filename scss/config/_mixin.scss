@@ -18,6 +18,10 @@
   border-radius: 8px;
   color: $secondary-color;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 @mixin paragraph {
@@ -26,6 +30,6 @@
 }
 
 @mixin column {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
