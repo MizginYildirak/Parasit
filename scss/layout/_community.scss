@@ -19,7 +19,13 @@
     max-width: 1080px;
     margin: 0 auto;
 
+    p {
+      line-height: 28px;
+    }
+
     &-details {
+      width: 100%;
+
       &-top {
         max-width: 80%;
         padding-bottom: 4rem;
@@ -37,12 +43,23 @@
         padding: 40px 20px;
         max-width: 80%;
         border-radius: 32px;
+        font-size: 13px;
+        height: 288px;
+        width: 612px;
 
-        &-votes {
-          @include center;
+        &-total {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          span:nth-child(2) {
+            color: $secondary-color;
+            font-weight: 600;
+          }
         }
 
-        &-statistics {
+        &-creator {
+          flex: 1;
         }
       }
     }

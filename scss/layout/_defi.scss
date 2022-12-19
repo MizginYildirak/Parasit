@@ -23,7 +23,7 @@
 
   &-top p {
     @include paragraph;
-    max-width: 90%;
+    max-width: 60%;
   }
 
   &-top button {
@@ -60,6 +60,10 @@
   .defi-top {
     @include center;
     flex-direction: column;
+
+    p {
+      text-align: center;
+    }
   }
 
   .left {
@@ -67,7 +71,7 @@
   }
 
   .defi {
-    padding: 26rem 0;
+    padding: 26rem 0 5rem;
   }
 
   .swap img {
@@ -94,7 +98,7 @@
 
   .defi-top p {
     text-align: center;
-    width: 100%;
+    max-width: 100%;
   }
 }
 

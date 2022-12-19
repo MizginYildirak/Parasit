@@ -1,0 +1,72 @@
+.eden {
+  display: flex;
+  padding: 5rem 0;
+
+  &-container {
+    @include center;
+    gap: 120px;
+
+    &-left {
+      p {
+        line-height: 28px;
+      }
+
+      &-top {
+        span {
+          color: #508ff4;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 600;
+          padding-bottom: 20px;
+        }
+
+        button {
+          @include btn;
+          background-color: $secondary-color;
+          color: white;
+        }
+
+        p {
+          padding: 20px 0;
+        }
+
+        h2 {
+          text-align: left;
+          padding-bottom: 0;
+        }
+      }
+
+      &-bottom {
+        display: flex;
+        margin-top: 2rem;
+        gap: 100px;
+
+        h3 {
+          padding: 20px 0;
+        }
+      }
+    }
+
+    &-right {
+      img {
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .eden-container {
+    flex-direction: column;
+  }
+
+  .eden-container-right img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eden-container-left-bottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
